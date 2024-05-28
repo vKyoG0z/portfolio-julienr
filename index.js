@@ -8,7 +8,7 @@ app.use(express.static('static'));
 
 // Route racine du projet qui redirige vers index.html
 app.get('/', (req, res) => {
-  res.sendFile(resolve(__dirname, 'pages/index.html'));
+  res.sendFile(resolve(__dirname, './index.html'));
 });
 
 app.get('/formationdashboard/expressjs', (req, res) => {
@@ -19,7 +19,7 @@ app.get('/formationdashboard/expressjs', (req, res) => {
 app.get('/navbar', (req, res) => {
   // Renvoyer la barre de navigation navbar.html avec l'identifiant de la page actuelle
   let currentPage = req.query.page || 'accueil'; // La page par defaut est accueil
-  res.sendFile(resolve(__dirname, 'pages/navbar.html'));
+  res.sendFile(resolve(__dirname, './navbar.html'));
 });
 
 // Définition de la route pour la page projet
