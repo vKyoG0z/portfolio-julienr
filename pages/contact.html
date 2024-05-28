@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/navbar.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Placeholder pour la barre de navigation -->
+  <div id="navbar-placeholder"></div>
+
+  <div class="banner">
+    <h1>Contact</h1>
+  </div>
+
+  <div class="container">
+    <p>Pour toute question ou demande, veuillez me contacter sur mon profil LinkedIn en messagerie.</p>
+    <p>Je vous invite également à le consulter pour plus d'information sur ma personne.</p>
+  </div>
+
+  <!-- Lien vers LinkedIn avec le logo -->
+  <div class="linkedin-container">
+    <a href="https://www.linkedin.com/in/julien-reynaud06" target="_blank">
+      <img src="/linkedinlogo.png" alt="LinkedIn Logo" class="linkedin-logo">
+    </a>
+  </div>
+
+  <script>
+    // Chargement de la barre de navigation via AJAX
+    $(function() {
+      $('#navbar-placeholder').load('/navbar');
+    });
+  </script>
+
+</body>
+</html>

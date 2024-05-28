@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ASCII Art</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/navbar.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    /* Nouvelles classes pour les images */
+    .tournesol-image, .codeascii-image {
+      width: 600px;
+      height: auto;
+      max-width: 100%;
+      display: block;
+      margin: 40px auto;
+      transition: transform 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Placeholder pour la barre de navigation -->
+  <div id="navbar-placeholder"></div>
+
+  <div class="banner">
+    <h1>ASCII Art</h1>
+  </div>
+
+  <div class="container">
+      <h2>Tournesol</h2>
+      <div class="tournesol-image">
+        <img src="/tournesol.png" alt="Tournesol" class="tournesol-image">
+        <p>Voici l'image d'un tournesol construit en ASCII art par notre projet en C++. Il existe en réalité plusieurs palettes de caractères disponibles ici, nous avons utilisé la palette contenant les caractères suivants "WW" "ww", "ll", "ii", "::", ",," , ".."</p>
+      </div>
+    <div class="project-column">
+      <h2>Code ASCII</h2>
+        <img src="/asciicode.png" alt="Code ASCII" class="codeascii-image">
+        <p>On peut remarquer ici une partie du code de notre projet permettant le choix de la palette qui peut être différents caractères en fonction de la valeur du pixel, on adapte le caractère plus au moins foncés dans la nuance de gris/noir après la lecture de l'image.</p>
+    </div>
+  </div>
+
+  <script>
+    // Chargement de la barre de navigation via AJAX
+    $(function() {
+      $('#navbar-placeholder').load('/navbar');
+    });
+  </script>
+
+</body>
+</html>

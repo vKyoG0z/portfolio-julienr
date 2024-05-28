@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  color: #e0e0e0;
+  background-color: #1e1e1e;
+}
+
+.banner {
+  background-color: #282c34;
+  color: #61dafb;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #282c34;
+  border-radius: 5px;
+}
+
+h1,h2 {
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  color: #61dafb;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Styles spécifiques pour l'image SLIME_GO_LOGO.png */
+.slimego-logo {
+  width: 600px; 
+  height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
+  max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+  display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
+  margin: 0 auto;
+  margin-bottom: 20px; /* Ajouter une marge inférieure */
+  transition: transform 0.7s ease; /* Ajustement de la durée de l'animation */
+}
+
+/* Styles spécifiques pour l'image iut_le_puy.jpg */
+.iut-le-puy-logo {
+  width: 600px; 
+  height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
+  max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+  display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
+  margin: 50px auto; 
+  transition: transform 0.5s ease; /* Ajustement de la durée de l'animation */
+}
+
+.lobby-slimego{
+  width: 600px; 
+  height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
+  max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+  display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
+  margin: 40px auto; /* Ajout d'une marge de 20px autour de l'image */
+  transition: transform 0.5s ease; /* Ajustement de la durée de l'animation */
+}
+
+.qt-logo{
+  width: 500px; 
+  height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
+  max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+  display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
+  margin: 0 auto;
+  margin-bottom: 50px;
+  transition: transform 0.5s ease; /* Ajustement de la durée de l'animation */
+}
+
+/* Styles spécifiques pour l'image Zèbre ASCII */
+.zebre-ascii {
+  width: 600px; 
+  height: auto; 
+  max-width: 100%; 
+  display: block; 
+  margin: 40px auto; 
+  transition: transform 0.5s ease; 
+}
+
+.tournesol-image{
+
+  width: 600px; 
+  height: auto; 
+  max-width: 100%; 
+  display: block; 
+  margin: 40px auto; 
+  transition: transform 0.5s ease; 
+}
+
+.codeascii-image{
+
+  
+  width: 600px; 
+  height: auto; 
+  max-width: 100%; 
+  display: block; 
+  margin: 40px auto; 
+  transition: transform 0.5s ease; 
+}
+
+.git-logo{
+
+  width: 600px; 
+  height: auto; 
+  max-width: 100%; 
+  display: block; 
+  margin: 40px auto; 
+  transition: transform 0.5s ease; 
+}
+
+.linkedin-logo {
+  display: block;
+  margin: 20px auto; /* Centre l'image horizontalement */
+  width: 200px; /* Taille de l'image */
+  height: auto; /* Maintient les proportions de l'image */
+  transition: transform 0.3s ease; /* Transition pour l'animation au survol */
+}
+
+.linkedin-logo:hover {
+  transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+}
+
+.gitlab-image {
+  max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+  height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
+  display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
+  margin: 20px auto; /* Ajout de marges pour centrer l'image horizontalement */
+}
+
+.csharp-logo {
+  max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+  height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
+  display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
+  margin: 20px auto; /* Ajout de marges pour centrer l'image horizontalement */
+}
+
+
+/* Style spécifique pour l'image Unity */
+.unity-logo {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.nr-logo {
+  width: 600px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 40px auto; 
+  transition: transform 0.5s ease;
+}
+
+.tonnes-logo {
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 40px auto; 
+  transition: transform 0.5s ease;
+}
+
+/* Style spécifique pour l'image ExpressJS Route */
+.expressjsroute-logo {
+  width: 93%; /* Définit la largeur de l'image à 100% du conteneur */
+  height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
+  max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+  display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
+  margin: 20px auto; /* Centre l'image horizontalement et ajoute une marge de 20px autour de l'image */
+  transition: transform 0.5s ease; /* Ajustement de la durée de l'animation */
+}
+
+/* Ajout du style pour l'image Astro */
+.astro-logo {
+  width: 600px; /* Définit la largeur de l'image */
+  height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
+  max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+  display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
+  margin: 40px auto; /* Ajout de marges pour centrer l'image horizontalement */
+  transition: transform 0.5s ease; /* Ajustement de la durée de l'animation */
+}
+
+.assetastroimg{
+  width: 95%; /* Définit la largeur de l'image */
+  height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
+  max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+  display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
+  margin: 40px auto; /* Ajout de marges pour centrer l'image horizontalement */
+  transition: transform 0.5s ease; /* Ajustement de la durée de l'animation */
+}
+
+.gitlab-image{
+  width: 95%; /* Définit la largeur de l'image */
+  height: auto; /* Permet à la hauteur de l'image de s'ajuster automatiquement en conservant les proportions d'origine */
+  max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+  display: block; /* Assure que l'image est affichée comme un bloc afin de pouvoir appliquer des marges et des rembourrages si nécessaire */
+  margin: 40px auto; /* Ajout de marges pour centrer l'image horizontalement */
+  transition: transform 0.5s ease; /* Ajustement de la durée de l'animation */
+}

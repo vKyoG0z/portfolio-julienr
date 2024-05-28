@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Formation</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/navbar.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Placeholder pour la barre de navigation -->
+  <div id="navbar-placeholder"></div>
+
+  <div class="banner">
+    <h1>Formation</h1>
+  </div>
+
+  <div class="container">
+    <h1>BUT INFORMATIQUE GRAPHIQUE</h1>
+    <a href="/formation/formationdashboard"> <!-- Mise à jour du chemin ici -->
+      <img src="iut_le_puy.jpg" alt="IUT Le Puy" class="iut-le-puy-logo">
+    </a>
+    <p> J'ai effectué mes études dans la ville et l'iut du Puy-en-Velay. J'ai choisis le diplome du BUT informatique en 3 ans.</p>
+  </div>
+
+  <script>
+    // Chargement de la barre de navigation via AJAX
+    $(function() {
+      $('#navbar-placeholder').load('/navbar');
+    });
+  </script>
+
+</body>
+</html>
